@@ -157,3 +157,53 @@ img{
     left: -5px;
     top: -5px;
 }
+
+
+/* Cabecera */
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--body-color);
+    z-index: var(--z-fixed);
+    transition: box-shadow .4s;
+}
+
+.nav{
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo{
+    display: flex;
+    column-gap: .5rem;
+    align-items: center;
+    font-weight: var(--font-semi-bold);
+    color: var(--tittle-color);
+}
+
+.nav_logo-circle,
+.nav_toggle{
+    width: 32px;
+    height: 32px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    display: grid;
+    place-items: center;
+}
+/* hacer redondo el fondo*/
+.nav_logo-circle{
+    border-radius: 50%;
+}
+
+.nav_toggle{
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+
