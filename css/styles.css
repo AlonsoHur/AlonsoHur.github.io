@@ -206,4 +206,100 @@ img{
     cursor: pointer;
 }
 
+/* Nav responsive en movil*/
 
+@media screen and (max-width: 1150px){
+    .nav_menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        background-color: hsla(0, 0%, 0%, .75);
+        width: 100%;
+        padding-block: 1.8rem 5rem;
+        text-align: center;
+        backdrop-filter: blur(8px);
+        transition: top .4s;
+    }
+}
+
+.nav_tittle,
+.nav_name,
+.nav_close{
+    color: var(--white-color);
+}
+
+.nav_tittle{
+    display: block;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 3.5rem;
+}
+
+.nav_name{
+    position: relative;
+    width: max-content;
+    margin: 0 auto 3rem;
+    font-size: var(--h2-font-size);
+}
+
+.nav_name::after,
+.nav_name::before{
+    content: '';
+    width: 40px;
+    height: 1px;
+    background-color: var(--text-color-light);
+    position: absolute;
+    top: 50%;
+    left: -4rem;
+}
+
+.nav_name::before{
+    left: initial;
+    right: -4rem;
+}
+
+.nav_list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.nav_link{
+    position: relative;
+    color: var(--text-color-light);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    transition: color .3s;
+}
+
+.nav_link::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    transition: width .3s;
+}
+
+/*al poner el raton se pone en blanco y sale una barrita debajo de 25%*/
+.nav_link:hover{
+    color: var(--white-color);
+}
+.nav_link:hover::after{
+    width: 25%;
+}
+
+.nav_close{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+
+/* mostrar menu, estaba en -100% y pasa a 0 */
+.show-menu{
+    top: 0;
+}
