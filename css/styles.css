@@ -54,7 +54,7 @@
     }
 }
 
-/* base*/
+/* --------------base-------------- */
 
 * {
     box-sizing: border-box;
@@ -94,7 +94,7 @@ img{
 }
 
 
-/* clases*/
+/*-------------- clases--------------*/
 
 .container {
     max-width: 1120px;
@@ -159,7 +159,7 @@ img{
 }
 
 
-/* Cabecera */
+/* --------------Cabecera-------------- */
 
 .header{
     position: fixed;
@@ -304,7 +304,11 @@ img{
     top: 0;
 }
 
-/* inicio*/
+.shadow-cabecera{
+    box-shadow: 0 1px 16px hsla(0, 0%, 0%, .12);
+}
+
+/* --------------inicio-------------- */
 
 .inicio_container{
     padding-top: 2rem;
@@ -385,6 +389,10 @@ img{
     display: grid;
     place-items: center;
     transition: background-color .3s;
+}
+
+.inicio_social-link:hover{
+    background-color: var(--black-color);
 }
 
 .inicio_info{
