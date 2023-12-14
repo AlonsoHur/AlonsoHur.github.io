@@ -736,8 +736,8 @@ img{
     transition: color .4s;
 }
 
-.portfolio_link i{
-    font-size: 1rem;
+.portfolio_botones i{
+    font-size: 1.25rem;
     color: var(--title-color);
     transition: color .4s;
 }
