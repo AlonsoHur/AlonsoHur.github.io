@@ -643,15 +643,18 @@ img{
 }
 
 .competencias_box{
-    position: absolute;
-    width: 32px;
+    width: 37px;
     height: 37px;
-    background-color: var(--first-color);
+    background-color: hsla(14, 98%, 50%, .75);
     right: -2px;
     top: -2px;
+    display: grid;
+    place-items: center;
+    
 }
 
 .competencias_tittle{
     font-size: var(--h2-font-size);
     margin-bottom: 1.25rem;
 }
+
