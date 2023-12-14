@@ -726,7 +726,7 @@ img{
 }
 
 
-.portfolio_botones i{
+.portfolio_icono{
     font-size: 1.25rem;
     color: var(--title-color);
     transition: color .4s;
@@ -738,12 +738,11 @@ img{
 }
 
 .portfolio_link{
-    font-size: .5rem;
+    font-size: .8rem;
     display: flex;
     align-items: center;
     column-gap: .25rem;
     color: var(--text-color);
-    font-size: var(--small-font-size);
     font-weight: var(--font-medium);
     transition: color .4s;
 }
