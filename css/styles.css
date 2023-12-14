@@ -11,7 +11,7 @@
     --black-color: hsl(0,0%,0%);
     --black-color-light: hsl(0,0%,40%);
     --white-color: hsl(0,0%,95%);
-    --tittle-color: hsl(0,0%,0%);
+    --title-color: hsl(0,0%,0%);
     --text-color: hsl(0,0%,35%);
     --text-color-light: hsl(0,0%,64%);
     --body-color: hsl(0,0%,87%);
@@ -75,7 +75,7 @@ body{
 }
 
 h1,h2,h3,h4 {
-    color: var(--tittle-color);
+    color: var(--title-color);
     font-weight: var(--font-bold);
 }
 
@@ -110,22 +110,22 @@ img{
     padding-block: 4rem 2rem;
 }
 
-.section_tittle-1,
-.section_tittle-2 {
+.section_title-1,
+.section_title-2 {
     position: relative;
     font-size: var(--h1-font-size);
     width: max-content;
     margin: .75rem auto 2rem;
 }
 
-.section_tittle-1 span,
-.section_tittle-2 span{
+.section_title-1 span,
+.section_title-2 span{
     z-index: 5;
     position: relative;
 }
 
-.section_tittle-1::after,
-.section_tittle-2::after{
+.section_title-1::after,
+.section_title-2::after{
     content: "";
     width: 40px;
     height: 28px;
@@ -135,7 +135,7 @@ img{
     right: -8px;
 }
 
-.section_tittle-2::after{
+.section_title-2::after{
     top: initial;
     bottom: -4px;
 }
@@ -184,7 +184,7 @@ img{
     column-gap: .5rem;
     align-items: center;
     font-weight: var(--font-semi-bold);
-    color: var(--tittle-color);
+    color: var(--title-color);
 }
 
 .nav_logo-circle,
@@ -227,13 +227,13 @@ img{
     }
 }
 
-.nav_tittle,
+.nav_title,
 .nav_name,
 .nav_close{
     color: var(--white-color);
 }
 
-.nav_tittle{
+.nav_title{
     display: block;
     font-size: var(--smaller-font-size);
     font-weight: var(--font-semi-bold);
@@ -406,7 +406,7 @@ img{
 
 .inicio_descripcion{
     text-align: center;
-    color: var(--tittle-color);
+    color: var(--title-color);
     margin-bottom: 1.5rem;
 }
 
@@ -527,7 +527,7 @@ img{
 
 .sobre_mi_descripcion{
     position: relative;
-    color: var(--tittle-color);
+    color: var(--title-color);
     margin-bottom: 1.5rem;   
 }
 
@@ -535,7 +535,7 @@ img{
     content: '';
     width: 20px;
     height: 1px;
-    background-color: var(--tittle-color);
+    background-color: var(--title-color);
     position: absolute;
     left: -1.75rem;
     top: .5rem;
@@ -543,7 +543,7 @@ img{
 
 .sobre_mi_lista{
     list-style: square;
-    color: var(--tittle-color);
+    color: var(--title-color);
     margin-bottom: 3rem;
 }
 
@@ -653,7 +653,7 @@ img{
     
 }
 
-.competencias_tittle{
+.competencias_title{
     font-size: var(--h2-font-size);
     margin-bottom: 1.25rem;
 }
