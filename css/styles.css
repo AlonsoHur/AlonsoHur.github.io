@@ -607,7 +607,6 @@ img{
 
 .competencias_card{
     position: relative;
-    cursor: pointer;
 }
 
 .competencias_contenido{
@@ -751,4 +750,8 @@ img{
 
 .portfolio_card:hover{
     background-color: var(--white-color);
+}
+
+.portfolio_botones b{
+    color: var(--title-color);
 }
