@@ -624,10 +624,9 @@ img{
     top: 0;
     left: 0;
     transition: transform .4s;
-    z-index: 0;
 }
 
-.competencias_borde:hover{
+.competencias_card:hover .competencias_borde{
     transform: translate(.75rem, .75rem);
 }
 
@@ -637,7 +636,7 @@ img{
 }
 
 .competencias_icon i{
-    font-size: 2rem;
+    font-size: 2.25rem;
     color: var(--black-color);
     position: relative;
     z-index: 5;
@@ -645,8 +644,8 @@ img{
 
 .competencias_box{
     position: absolute;
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 37px;
     background-color: var(--first-color);
     right: -2px;
     top: -2px;
