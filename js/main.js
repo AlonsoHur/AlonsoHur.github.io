@@ -59,3 +59,14 @@ const enviarEmail = (e) => {
 }
 
 contactoForm.addEventListener('submit', enviarEmail)
+
+/* mostrar boton de volver a inicio */
+
+const volverInicio = () =>{
+    const scroll = document.getElementById('scroll-up')
+
+    this.scrollY >= 350 ? scroll.classList.add('mostrar-scroll')
+                        : scroll.classList.remove('mostrar-scroll')
+}
+
+window.addEventListener('scroll', volverInicio)
