@@ -596,6 +596,41 @@ img{
     border: 3px solid var(--first-color);
 }
 
+/* -------------- Formacion -------------- */
+.formacion_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.apartado_formacion{
+
+    position: relative;
+    justify-self: left;
+    padding-left: 1.25rem;
+}
+
+.apartado_formacion::before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 200%;
+    background-color: var(--first-color);
+    left: -.25rem;
+    top: .75rem;
+    
+}
+
+.apartado_formacion::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--first-color);
+    left: -.65rem;
+    top: .5rem;
+}
+
 /* -------------- tecnologias -------------- */
 
 .tecnologias_container{
