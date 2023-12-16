@@ -862,7 +862,7 @@ img{
 }
 
 /* con esto evitamos que al autocompletar se cambien los colores*/
-.contacto_input:-webkit-autofil{
+.contacto_input:-webkit-autofill{
     transition: background-color 6000s, color 6000s;
 }
 
