@@ -754,3 +754,204 @@ img{
 .portfolio_botones b{
     color: var(--title-color);
 }
+
+/* -------------- Contacto -------------- */
+
+
+.contacto{
+    padding-bottom: 0;
+}
+
+.contacto_container{
+    position: relative;
+    grid-template-rows: 300px max-content max-content;
+    row-gap: 0;
+}
+
+.contacto_data{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: var(--container-color);
+    padding: 3rem 1.5rem 3.5rem;
+    margin-left: auto;
+    border-bottom: 4px solid var(--first-color);
+    z-index: 5;
+    transition: background-color .4s;
+}
+
+.contacto_ .section_title-2{
+    margin: 0 0 1.5rem;
+    transform: translateX(-3rem);
+}
+
+.contacto_descripcion-1{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    margin-bottom: 2rem;
+}
+
+.contacto_descripcion-2{
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+}
+
+.contacto_data .cube{
+    top: 2rem;
+    right: 2.5rem;
+}
+
+.contacto_correo{
+    position: relative;
+    background-color: var(--black-color);
+    padding: 5rem 1.5rem 2.5rem;
+    margin-top: -2.5rem;
+    transition: background-color .4s;
+}
+
+.contacto_title{
+    color: var(--white-color);
+    font-size: var(--h2-font-size);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contacto_form,
+.contacto_grupo{
+    display: grid;
+    row-gap: 1.25rem;
+}
+
+.contacto_form{
+    position: relative;
+}
+
+.contacto_box{
+    position: relative;
+    width: 100%;
+    height: 58px;
+}
+
+.contacto_input,
+.contacto_boton{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    outline: none;
+    border: none;
+}
+
+.contacto_input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-color);
+    border: 3px solid var(--black-color-light);
+    color: var(--white-color);
+    padding: .5rem 1rem;
+    font-weight: var(--font-medium);
+    transition: border .4s, background-color .4s;
+}
+
+.contacto_input::placeholder{
+    color: var(--text-color-light);
+    transition: opacity .4s;
+}
+
+.contacto_input:focus{
+    border: 3px solid var(--white-color);
+}
+
+/* con esto evitamos que al autocompletar se cambien los colores*/
+.contacto_input:-webkit-autofil{
+    transition: background-color 6000s, color 6000s;
+}
+
+.contacto_label{
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    color: var(--text-color-light);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    background-color: var(--black-color);
+    padding: 8px;
+    pointer-events: none;
+    transition: top .4s, opacity .4s, background-color .4s;
+    opacity: 0;
+}
+
+.contacto_form .contacto_area{
+    height: 10rem;
+}
+
+.contacto_area textarea{
+    resize: none;
+    padding-top: 1rem;
+}
+
+.contacto_boton{
+    background-color: var(--first-color);
+    cursor: pointer;
+}
+
+.contacto_input:focus::placeholder{
+    opacity: 0;
+}
+
+/* se mantiene una label arriba cuando se esta escribiendo o cuando se ha escrito y se ha ido a otro apartado */
+.contacto_input:focus + .contacto_label,
+.contacto_input:not(:placeholder-shown).contacto_input:not(:focus) + .contacto_label{
+    opacity: 1;
+    top: -16px;
+}
+
+.contacto_social{
+    display: grid;
+    row-gap: 1rem;
+    background-color: hsl(0,0%,10%);
+    padding-block: 1rem 2rem;
+    text-align: center;
+}
+
+.contacto_social-flecha{
+    width: 32px;
+    margin: 0 auto;
+}
+
+.contacto_social-datos{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.contacto_social_descripcion-1{
+    color: var(--text-color-light);
+    font-size: var(--small-font-size);
+    margin-bottom: .5rem;
+}
+
+.contacto_social_descripcion-2{
+    color: var(--white-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.contacto_social-links{
+    display: flex;
+    justify-content: center;
+    column-gap: 0.75rem;
+}
+
+.contacto_social-link{
+    background-color: var(--black-color-light);
+    padding: 6px;
+    color: var(--white-color);
+    font-size: 1.25rem;
+    display: grid;
+    place-items: center;
+    transition: background-color .3s;
+}
+
+.contacto_social-link:hover{
+    background-color: var(--first-color);
+}

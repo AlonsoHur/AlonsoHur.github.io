@@ -175,7 +175,7 @@
         <!---------------- Competencias ---------------->
         <section class="competencias">
             <h2 class="section_title-2">
-                <span>Competencias.</span>
+                <span>Tecnologias.</span>
             </h2>
 
             <div class="competencias_container container grid" id="competencias">
@@ -291,6 +291,90 @@
                 </article>
             </div>
         </section>
+
+        <!---------------- Contacto ---------------->
+
+        <section class="contacto" id="contacto">
+            <div class="contacto_container grid">
+
+                <div class="contacto_data">
+
+                    <h2 class="section_title-2">
+                        <span>Contacto</span>
+                    </h2>
+
+                    <p class="contacto_descripcion-1">
+                        Enviame un correo para mantenernos en contacto.
+                    </p>
+                    <p class="contacto_descripcion-2">
+                        Rellena con tu <b>Nombre</b> y <b>Correo</b> y te responderé con la mayor brevedad posible.
+                    </p>
+
+                    <div class="cube"></div>
+
+                </div>
+
+
+                <div class="contacto_correo">
+                    <h2 class="contacto_title">
+                        Enviame un mensaje
+                    </h2>
+
+                    <form action="" class="contacto_form" id="contacto-form">
+
+                        <div class="contacto_grupo">
+                            <div class="contacto_box">
+                                <input type="text" name="nombre_usuario" class="contacto_input" id="nombre" required placeholder="Nombre">
+                                <label for="name" class="contacto_label">Nombre</label>
+                            </div>
+
+                            <div class="contacto_box">
+                                <input type="email" name="correo_usuario" class="contacto_input" id="correo" required placeholder="Correo">
+                                <label for="correo" class="contacto_label">Correo</label>
+                            </div>
+                        </div>
+
+                        <div class="contacto_box">
+                            <input type="text" name="asunto_usuario" class="contacto_input" id="asunto" required placeholder="Asunto">
+                            <label for="asunto" class="contacto_label">Asunto</label>
+                        </div>
+
+                        <div class="contacto_box contacto_area">
+                            <textarea name="mensaje_usuario" id="mensaje" class="contacto_input" required placeholder="Mensaje"></textarea>
+                            <label for="mensaje" class="contacto_label">Mensaje</label>
+                        </div>
+
+                        <button type="submit" class="contacto_boton boton">
+                            <i class="ri-send-plane-line"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+                <div class="contacto_social">
+
+                    <img src="./img/inicio-flecha.svg" alt="image" class="contacto_social-flecha">
+
+                    <div class="contacto_social-datos">
+                        <div class="contacto_social_descripcion-1">
+                            ¿No se envia el mensaje?
+                        </div>
+                        
+                        <div class="contacto_social_descripcion-2">
+                            Contactame por Linkedin.
+                        </div>
+
+                        <!--si luego quiero añadir mas links van aqui-->
+                        <div class="contacto_social-links">
+                            <a href="https://www.linkedin.com/in/alonso-hurtado-lillo-67a54925a/" target="_blank" class="contacto_social-link">
+                                <i class="ri-linkedin-box-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
     </main>
 
     <!-- Pie de página -->
