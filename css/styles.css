@@ -596,20 +596,20 @@ img{
     border: 3px solid var(--first-color);
 }
 
-/* -------------- Competencias -------------- */
+/* -------------- tecnologias -------------- */
 
-.competencias_container{
+.tecnologias_container{
     grid-template-columns: 250px;
     justify-content: center;
     row-gap: 2rem;
     padding-top: 1rem;
 }
 
-.competencias_card{
+.tecnologias_card{
     position: relative;
 }
 
-.competencias_contenido{
+.tecnologias_contenido{
     height: 100%;
     background-color: var(--body-color);
     border: 4px solid var(--black-color);
@@ -619,7 +619,7 @@ img{
     transition: background-color .4s, border 4s;
 }
 
-.competencias_borde{
+.tecnologias_borde{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -629,23 +629,23 @@ img{
     transition: transform .4s;
 }
 
-.competencias_card:hover .competencias_borde{
+.tecnologias_card:hover .tecnologias_borde{
     transform: translate(.75rem, .75rem);
 }
 
-.competencias_icon{
+.tecnologias_icon{
     position: relative;
     display: inline-block;
 }
 
-.competencias_icon i{
+.tecnologias_icon i{
     font-size: 2.25rem;
     color: var(--black-color);
     position: relative;
     z-index: 5;
 }
 
-.competencias_box{
+.tecnologias_box{
     width: 37px;
     height: 37px;
     background-color: hsla(14, 98%, 50%, .75);
@@ -656,7 +656,7 @@ img{
     
 }
 
-.competencias_title{
+.tecnologias_title{
     font-size: var(--h2-font-size);
     margin-bottom: 1.25rem;
 }
@@ -954,4 +954,30 @@ img{
 
 .contacto_social-link:hover{
     background-color: var(--first-color);
+}
+
+/* -------------- Footer -------------- */
+
+.footer{
+    background-color: var(--black-color);
+}
+
+.footer_container{
+    padding-block: 3rem 2rem;
+    row-gap: 2.5rem;
+}
+
+.footer_links{
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.footer_link{
+    color: var(--white-color);
+    transition: color .4s;
+}
+
+.footer_link:hover{
+    color: var(--text-color-light);
 }
