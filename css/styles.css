@@ -600,6 +600,7 @@ img{
 .formacion_container{
     display: flex;
     flex-direction: column;
+    gap: 0;
 }
 
 .apartado_formacion{
@@ -611,7 +612,13 @@ img{
 }
 
 .formacion_descripcion{
+    color: var(--title-color);
     padding-left: 3rem;
+}
+
+.formacion_fecha{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
 }
 .formacion_img{
     top: -6.75rem;
