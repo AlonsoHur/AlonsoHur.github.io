@@ -614,7 +614,7 @@ img{
     padding-left: 3rem;
 }
 .formacion_img{
-    top: -5rem;
+    top: -6.75rem;
     left: -2rem;
     position: relative;
     width: 70px;
@@ -635,10 +635,14 @@ img{
     content: '';
     position: absolute;
     width: 3px;
-    height: 200%;
+    height: 150%;
     background-color: var(--black-color-light);
     left: 1.25rem;
     top: 1.75rem;
+
+}
+.ultimo::before{
+    height: 50%;
 
 }
 
