@@ -600,6 +600,17 @@ img{
     border: 3px solid var(--first-color);
 }
 
+.cv{
+    display: flex;
+    place-content: center;
+    margin-bottom: 3.5rem;
+}
+
+.cv_boton{
+    width: 200px;
+    height: auto;
+}
+
 /* -------------- Formacion -------------- */
 .formacion_container{
     display: flex;
@@ -739,12 +750,9 @@ img{
 
 /* -------------- Portfolio -------------- */
 
-.portfolio{
-    border-bottom: 6px solid var(--black-color-light);
-}
-
 .portfolio_container{
     row-gap: 2rem;
+    padding-bottom: 2rem;
 }
 
 .portfolio_card{
@@ -1088,8 +1096,30 @@ img{
     transition: bottom .4s, transform .4s, background-color .4s;
 }
 
+.scrollup i{
+    animation: scroll-up 3s infinite;
+}
+
 .scrollup:hover{
     transform: translateY(-.5rem);
+}
+
+@keyframes scroll-up{
+    0%{
+        transform: translateY(.6rem);
+        opacity: 0;
+
+    }
+    50%{
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+    100%{
+        transform: translateY(-1rem);
+        opacity: 0;
+
+    }
 }
 
 .mostrar-scroll{
@@ -1121,6 +1151,10 @@ img{
     }
     .contacto_data .section_title-2{
         transform: translateX(0);
+    }
+    
+    .portfolio_container{
+        padding-bottom: 2rem;
     }
 }
 
@@ -1164,16 +1198,23 @@ img{
         color: var(--title-color);
     }
 
+    .portfolio_container{
+        padding-bottom: 2rem;
+    }
 }
 
 @media screen and (min-width: 768px){
     .tecnologias_container{
         grid-template-columns: repeat(2,250px);
+        padding-bottom: 2rem;
     }
+/*----------------------CAMBIAR SI AGREGO MAS A PORTFOLIO (poner en repeat 2 o 3)------------------------------- */
 
     .portfolio_container{
-        grid-template-columns: repeat(2,350px);
+        grid-template-columns: repeat(1,350px);
+        padding-bottom: 2rem;
     }
+    
 }
 
 @media screen and (min-width: 1150px){
@@ -1450,7 +1491,7 @@ img{
     .tecnologias_card:hover .tecnologias_borde{
         transform: translate(1.25rem, 1.25rem);
     }
-/*----------------------CAMBIAR SI AGREGO MAS A PORTFOLIO------------------------------- */
+/*----------------------CAMBIAR SI AGREGO MAS A PORTFOLIO (poner en repeat 2 o 3)------------------------------- */
     .portfolio_container{
         grid-template-columns: repeat(1, 352px);
         padding-block: 3rem 4rem;
