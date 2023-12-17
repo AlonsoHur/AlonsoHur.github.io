@@ -41,7 +41,7 @@ const enviarEmail = (e) => {
     e.preventDefault()
 
     //servicio emailjs
-    emailjs.sendForm('service_jrx2czh', 'template_dro35qi', '#contacto-form', 'V9rfKLoBCxCkSoDyi')
+    emailjs.sendForm('service_jrx2cz', 'template_dro35qi', '#contacto-form', 'V9rfKLoBCxCkSoDyi')
     .then(() =>{
         //indicamos que se envio bien
         contactoMensaje.textContent = 'Mensaje enviado correctamente ✅'
@@ -54,6 +54,10 @@ const enviarEmail = (e) => {
         contactoForm.reset()
     }, ()=>{
         contactoMensaje.textContent= 'El mensaje no se ha podido enviar (Error en el servicio) ❌'
+
+        setTimeout(() =>{
+
+            contactoMensaje.textContent= ''}, 5000)
     })
     
 }
