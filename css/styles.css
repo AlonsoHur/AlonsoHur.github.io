@@ -607,6 +607,28 @@ img{
     position: relative;
     justify-self: left;
     padding-left: 1.25rem;
+    text-align: center;
+}
+
+.formacion_descripcion{
+    padding-left: 3rem;
+}
+.formacion_img{
+    top: -5rem;
+    left: -2rem;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid var(--black-color-light);
+
+}
+
+.formacion_img img{
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+
 }
 
 .apartado_formacion::before{
@@ -614,21 +636,10 @@ img{
     position: absolute;
     width: 3px;
     height: 200%;
-    background-color: var(--first-color);
-    left: -.25rem;
-    top: .75rem;
-    
-}
+    background-color: var(--black-color-light);
+    left: 1.25rem;
+    top: 1.75rem;
 
-.apartado_formacion::after{
-    content: '';
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: var(--first-color);
-    left: -.65rem;
-    top: .5rem;
 }
 
 /* -------------- tecnologias -------------- */
