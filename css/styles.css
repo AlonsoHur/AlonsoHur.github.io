@@ -1620,16 +1620,7 @@ img{
         bottom: -2.5rem;
     }
 
-    .footer_container{
-        padding-block: 4rem;
-        grid-template-columns: repeat(2, max-content);
-        justify-content: space-between;
-    }
-
-    .footer_links{
-        column-gap: 3rem;
-        order: 1;
-    }
+    
 
     .scrollup{
         right: 3rem;
