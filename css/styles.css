@@ -781,9 +781,21 @@ img{
 
 /* -------------- Portfolio -------------- */
 
+.portfolio{
+    background-color: var(--container-color);
+}
+
 .portfolio_container{
     row-gap: 2rem;
     padding-bottom: 2rem;
+}
+
+.portfolio .section_title-1{
+    padding-top: 1rem;
+}
+
+.portfolio .section_title-1::after{
+    margin-top: 1rem;
 }
 
 .portfolio_card{
