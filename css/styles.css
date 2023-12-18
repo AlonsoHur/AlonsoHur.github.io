@@ -526,6 +526,7 @@ img{
 
 .sobre_mi_info{
     padding-left: 1.25rem;
+    padding-bottom: 1rem;
 }
 
 .sobre_mi_descripcion{
@@ -548,11 +549,6 @@ img{
     background-color: transparent;
 }
 
-.sobre_mi_lista{
-    list-style: square;
-    color: var(--title-color);
-    margin-bottom: 3rem;
-}
 
 .sobre_mi_botones{
     display: flex;
@@ -746,6 +742,40 @@ img{
 .tecnologias_title{
     font-size: var(--h2-font-size);
     margin-bottom: 1.25rem;
+}
+
+/* -------------- Aptitudes -------------- */
+
+.aptitudes_container{
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.aptitudes_card{
+    margin: auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+    border-radius: 8%;
+    transition: transform .4s, background-color .4s;
+    width: 130px;
+    height: auto;
+}
+
+.aptitudes_card:hover{
+    transform: translateY(-0.5rem);
+    background-color: rgba(245, 125, 0, 0.75);
+}
+
+.aptitudes_card p{
+    padding-top: .75rem;
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+.aptitudes_img{
+    margin: 0 auto;
 }
 
 
@@ -1206,6 +1236,10 @@ img{
     .contacto_social_descripcion-2{
         color: var(--title-color);
     }
+
+    .aptitudes_container{
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -1213,6 +1247,7 @@ img{
         grid-template-columns: repeat(2,250px);
         padding-bottom: 2rem;
     }
+
 /*----------------------CAMBIAR SI AGREGO MAS A PORTFOLIO (poner en repeat 2 o 3)------------------------------- */
 
     .portfolio_container{
@@ -1241,7 +1276,7 @@ img{
     }
 
     .nav{
-        column-gap: 4rem;
+        column-gap: 2rem;
         
     }
 
@@ -1599,4 +1634,8 @@ img{
     .scrollup{
         right: 3rem;
     }
+
+    .aptitudes_container{
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        }
 }
