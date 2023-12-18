@@ -689,6 +689,7 @@ img{
     justify-content: center;
     row-gap: 2rem;
     padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 .tecnologias_card{
@@ -975,7 +976,14 @@ img{
 .contacto_boton{
     background-color: var(--first-color);
     cursor: pointer;
-    color: var(--black-color)
+    color: var(--black-color);
+    transition: background-color .4s, color .4s;
+}
+
+.contacto_boton:hover{
+    background-color: var(--black-color);
+    color: var(--first-color);
+    border: 2px solid var(--first-color);
 }
 
 .contacto_input:focus::placeholder{
@@ -1198,10 +1206,6 @@ img{
     .contacto_social_descripcion-2{
         color: var(--title-color);
     }
-
-    .portfolio_container{
-        padding-bottom: 2rem;
-    }
 }
 
 @media screen and (min-width: 768px){
@@ -1213,7 +1217,6 @@ img{
 
     .portfolio_container{
         grid-template-columns: repeat(1,350px);
-        padding-bottom: 2rem;
     }
     
 }
