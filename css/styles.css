@@ -975,6 +975,7 @@ img{
 .contacto_boton{
     background-color: var(--first-color);
     cursor: pointer;
+    color: var(--black-color)
 }
 
 .contacto_input:focus::placeholder{
