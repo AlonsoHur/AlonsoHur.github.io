@@ -419,8 +419,13 @@ img{
     display: block;
     width: max-content;
     margin: 0 auto;
+    padding-bottom: 1rem;
+    transition: .4s;
 }
 
+.inicio_scroll:hover{
+    transform: translateY(0.5rem);
+}
 .inicio_scroll-text{
     display: none;
 }
