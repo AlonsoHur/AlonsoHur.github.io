@@ -32,37 +32,6 @@ const shadowCabecera = () =>{
 
 window.addEventListener('scroll', shadowCabecera)
 
-/* email */
-
-const contactoForm = document.getElementById('contacto-form')
-const contactoMensaje = document.getElementById('contacto-mensaje')
-
-const enviarEmail = (e) => {
-    e.preventDefault()
-
-    //servicio emailjs
-    emailjs.sendForm('service_jrx2cz', 'template_dro35qi', '#contacto-form', 'V9rfKLoBCxCkSoDyi')
-    .then(() =>{
-        //indicamos que se envio bien
-        contactoMensaje.textContent = 'Mensaje enviado correctamente ✅'
-
-        //lo quitamos tras 5 s
-        setTimeout(() =>{
-
-            contactoMensaje.textContent= ''}, 5000)
-            //quitamos parametros
-        contactoForm.reset()
-    }, ()=>{
-        contactoMensaje.textContent= 'El mensaje no se ha podido enviar (Error en el servicio) ❌'
-
-        setTimeout(() =>{
-
-            contactoMensaje.textContent= ''}, 5000)
-    })
-    
-}
-
-contactoForm.addEventListener('submit', enviarEmail)
 
 /* mostrar boton de volver a inicio */
 
