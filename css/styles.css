@@ -899,6 +899,24 @@ img{
     background-color: var(--white-color);
 }
 
+.c_portfolio{
+    font-weight: var(--font-bold);
+    font-size: .75rem;
+    width: 18px;
+    height: 18px;
+    display: grid;
+    place-items: center;
+    background-color: var(--black-color);
+    color: var(--container-color);
+    justify-items: center;
+    border-radius: 10%;
+    transition: background-color .4s;
+}
+
+.c_portfolio:hover{
+    background-color: var(--first-color);
+}
+
 
 /* -------------- Contacto -------------- */
 
@@ -913,6 +931,8 @@ img{
     position: relative;
     grid-template-rows: 300px max-content max-content;
     row-gap: 0;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
 .contacto_data{
@@ -1154,7 +1174,7 @@ img{
 /*----------------------CAMBIAR SI AGREGO MAS A PORTFOLIO (poner en repeat 2 o 3)------------------------------- */
 
     .portfolio_container{
-        grid-template-columns: repeat(1,350px);
+        grid-template-columns: repeat(2,350px);
     }
 
     .contacto_container{
@@ -1444,7 +1464,7 @@ img{
     }
 /*----------------------CAMBIAR SI AGREGO MAS A PORTFOLIO (poner en repeat 2 o 3)------------------------------- */
     .portfolio_container{
-        grid-template-columns: repeat(1, 352px);
+        grid-template-columns: repeat(2, 352px);
         padding-block: 3rem 4rem;
     }
 
